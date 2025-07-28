@@ -27,9 +27,9 @@ export default function Home() {
               <span className="text-blue-300"> Reliable Suppliers</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Your trusted partner for construction equipment, electrical
-              panels, turbines, generators, pumps and industrial materials. We
-              bridge the gap between your requirements and quality suppliers.
+              Your reliable solution for all your requirements, right at your
+              fingertips. We bridge the gap between your needs and quality
+              suppliers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

@@ -62,7 +62,7 @@ export default function Footer() {
                   href="/products/solar"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
-                  Solar Materials
+                  Power Generation & Power Supply Equipment
                 </Link>
               </li>
               <li>
@@ -70,7 +70,7 @@ export default function Footer() {
                   href="/products/construction"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
-                  Construction Materials
+                  Irrigation and Water Supply Equipment
                 </Link>
               </li>
               <li>
@@ -78,7 +78,7 @@ export default function Footer() {
                   href="/products/water-supply"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
-                  Water Supply Materials
+                  Equipment for Mining, Rigging, and Construction
                 </Link>
               </li>
               <li>
@@ -86,7 +86,15 @@ export default function Footer() {
                   href="/products/pharmaceutical"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
-                  Pharmaceutical Reactors
+                  Equipment for Pharmaceutical Manufacturing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products/pharmaceutical"
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  Construction and Building Materials
                 </Link>
               </li>
             </ul>
@@ -95,30 +103,30 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <div className="w-5 h-5 flex items-center justify-center mr-2">
                   <i className="ri-phone-line"></i>
                 </div>
                 <span>+1 (555) 123-4567</span>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <div className="w-5 h-5 flex items-center justify-center mr-2">
                   <i className="ri-mail-line"></i>
                 </div>
-                <span>info@materialsupply.com</span>
+                <span>info@matlinka.com</span>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <div className="w-5 h-5 flex items-center justify-center mr-2">
                   <i className="ri-map-pin-line"></i>
                 </div>
                 <span>123 Business District, City</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Material Supply Solutions. All rights reserved.</p>
+          <p>&copy; 2025 Material Supply Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

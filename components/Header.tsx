@@ -33,25 +33,31 @@ export default function Header() {
                   href="/products/solar"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
-                  Solar Materials
+                  Power Generation & Power Supply Equipment
                 </Link>
                 <Link
                   href="/products/construction"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
-                  Construction Materials
+                  Irrigation and Water Supply Equipment
                 </Link>
                 <Link
                   href="/products/water-supply"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
-                  Water Supply Materials
+                  Equipment for Mining, Rigging, and Construction
                 </Link>
                 <Link
                   href="/products/pharmaceutical"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
-                  Pharmaceutical Reactors
+                  Equipment for Pharmaceutical Manufacturing
+                </Link>
+                <Link
+                  href="/products/pharmaceutical"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
+                >
+                  Construction and Building Materials
                 </Link>
               </div>
             </div>
