@@ -36,7 +36,7 @@ export default function Contact() {
 
     try {
       const result1 = await emailjs.send(
-        "service_shjkgqi", // your actual service ID
+        "service_k12bvbo", // your actual service ID
         "template_ud9b3sf", // replace with this admin Contact Us template ID
         {
           name: formData.name,
@@ -51,7 +51,7 @@ export default function Contact() {
       );
 
       const result = await emailjs.send(
-        "service_shjkgqi", // ✅ Your actual EmailJS service ID
+        "service_k12bvbo", // ✅ Your actual EmailJS service ID
         "template_d7hwtx5", // ✅ Replace with your actual template ID
         {
           name: formData.name,
