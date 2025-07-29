@@ -108,15 +108,15 @@ export default function Services() {
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
                     <i className="ri-check-line text-green-600 mr-2"></i>
-                    Pre-shipment inspection
+                    Thorough material Sourcing
                   </li>
                   <li className="flex items-center">
                     <i className="ri-check-line text-green-600 mr-2"></i>
-                    Certification verification
+                    Industry-standard Compliance
                   </li>
                   <li className="flex items-center">
                     <i className="ri-check-line text-green-600 mr-2"></i>
-                    Quality documentation
+                    Detailed product information
                   </li>
                 </ul>
               </div>
