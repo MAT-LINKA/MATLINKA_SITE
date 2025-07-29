@@ -263,7 +263,7 @@ export default function SolarMaterials() {
 
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-factory-line text-purple-600 text-xl"></i>
+                <i className="ri-wireless-charging-line text-purple-600 text-xl"></i>
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">
                 Utility Scale
