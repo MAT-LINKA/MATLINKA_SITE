@@ -25,42 +25,73 @@ export default function Header() {
               Home
             </Link>
             <div className="relative group">
+              {/* Main Menu */}
               <button className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 Products
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link
-                  href="/products/solar"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
-                >
-                  Power Generation & Power Supply Equipment
-                </Link>
-                <Link
-                  href="/products/construction"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
-                >
-                  Irrigation and Water Supply Equipment
-                </Link>
-                <Link
-                  href="/products/water-supply"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
-                >
-                  Equipment for Mining, Rigging, and Construction
-                </Link>
-                <Link
-                  href="/products/pharmaceutical"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
-                >
-                  Equipment for Pharmaceutical Manufacturing
-                </Link>
-                <Link
-                  href="/products/pharmaceutical"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 cursor-pointer"
-                >
-                  Construction and Building Materials
-                </Link>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <ul className="divide-y divide-gray-100">
+                  <li>
+                    <Link
+                      href="/products/power"
+                      className="flex items-start px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition rounded-t-lg"
+                    >
+                      ⚡{" "}
+                      <span className="ml-2">
+                        Power Generation & Power Supply Equipment
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/water-supply"
+                      className="flex items-start px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                    >
+                      💧{" "}
+                      <span className="ml-2">
+                        Irrigation and Water Supply Equipment
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/mining"
+                      className="flex items-start px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                    >
+                      ⛏️{" "}
+                      <span className="ml-2">
+                        Equipment for Mining, Rigging, and Construction
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/pharmaceutical"
+                      className="flex items-start px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                    >
+                      🧪{" "}
+                      <span className="ml-2">
+                        Equipment for Pharmaceutical Manufacturing
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/construction"
+                      className="flex items-start px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg"
+                    >
+                      🏗️{" "}
+                      <span className="ml-2">
+                        Construction and Building Materials
+                      </span>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
+
             <Link
               href="/about"
               className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
@@ -99,10 +130,10 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/products/solar"
+                href="/products/power"
                 className="text-gray-700 hover:text-blue-600 py-2 cursor-pointer"
               >
-                Solar Materials
+                Solar Equipments
               </Link>
               <Link
                 href="/products/construction"

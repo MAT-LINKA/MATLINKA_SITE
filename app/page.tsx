@@ -94,7 +94,7 @@ export default function Home() {
                 distribution equipment
               </p>
               <Link
-                href="/products/solar"
+                href="/products/power"
                 className="text-blue-600 hover:text-blue-800 font-semibold cursor-pointer"
               >
                 Learn More →

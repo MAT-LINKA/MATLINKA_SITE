@@ -59,7 +59,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/products/solar"
+                  href="/products/power"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
                   Power Generation & Power Supply Equipment
@@ -67,7 +67,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products/construction"
+                  href="/products/water-supply"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
                   Irrigation and Water Supply Equipment
@@ -75,7 +75,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products/water-supply"
+                  href="/products/mining"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
                   Equipment for Mining, Rigging, and Construction
@@ -91,7 +91,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products/pharmaceutical"
+                  href="/products/construction"
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
                   Construction and Building Materials

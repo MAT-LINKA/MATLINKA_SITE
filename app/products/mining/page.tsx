@@ -13,11 +13,11 @@ export default function ConstructionMaterials() {
       <section className="py-20 bg-gradient-to-r from-orange-600 to-orange-800">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6">
-            Construction Materials & Equipment
+            Equipment for Mining, Rigging, and Construction
           </h1>
           <p className="text-xl text-orange-100 max-w-2xl mx-auto">
-            Premium construction solutions from world-class manufacturers for
-            your infrastructure and building projects
+            Professional heavy equipment and machinery solutions for mining
+            operations, rigging projects, and construction sites{" "}
           </p>
         </div>
       </section>
@@ -27,150 +27,115 @@ export default function ConstructionMaterials() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Professional Construction Solutions
+              Heavy Equipment Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Industry-leading construction equipment and materials sourced from
-              certified global suppliers
+              Industry-leading mining, rigging, and construction equipment from
+              certified global manufacturers
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Heavy%20construction%20equipment%20and%20machinery%20on%20construction%20site%2C%20excavators%20bulldozers%20cranes%20and%20dump%20trucks%2C%20professional%20construction%20fleet%2C%20organized%20construction%20equipment%20yard%20with%20clear%20blue%20sky%20background&width=600&height=400&seq=heavy-machinery&orientation=landscape"
-                alt="Heavy Construction Machinery"
+                src="https://readdy.ai/api/search-image?query=Heavy%20mining%20equipment%20including%20excavators%20bulldozers%20and%20dump%20trucks%20at%20mining%20site%2C%20professional%20mining%20machinery%20fleet%2C%20organized%20mining%20equipment%20with%20yellow%20and%20orange%20machinery%2C%20clear%20industrial%20mining%20operation%20background&width=600&height=400&seq=mining-equipment&orientation=landscape"
+                alt="Mining Equipment"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Heavy Construction Machinery
+                  Mining Equipment
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Premium earthmoving and construction equipment from leading
-                  global manufacturers including CAT, Komatsu, and Volvo
+                <p className="text-gray-600">
+                  Heavy-duty excavators, bulldozers, dump trucks, and
+                  specialized mining machinery for efficient extraction
+                  operations
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Hydraulic Excavators (1-80 tons capacity)</li>
-                  <li>• Bulldozers & Motor Graders</li>
-                  <li>• Tower Cranes & Mobile Cranes</li>
-                  <li>• Articulated Dump Trucks & Wheel Loaders</li>
-                </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Construction%20building%20materials%20including%20steel%20beams%20concrete%20blocks%20and%20construction%20supplies%2C%20organized%20construction%20materials%20warehouse%2C%20steel%20structural%20components%20and%20building%20supplies%2C%20clean%20industrial%20storage%20facility&width=600&height=400&seq=building-materials&orientation=landscape"
-                alt="Structural Building Materials"
+                src="https://readdy.ai/api/search-image?query=Industrial%20rigging%20equipment%20including%20cranes%20hoists%20and%20lifting%20gear%2C%20professional%20rigging%20machinery%20and%20lifting%20systems%2C%20organized%20rigging%20equipment%20yard%20with%20cranes%20and%20lifting%20devices%2C%20construction%20site%20rigging%20operations&width=600&height=400&seq=rigging-equipment&orientation=landscape"
+                alt="Rigging Equipment"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Structural Building Materials
+                  Rigging Equipment
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  High-grade structural materials meeting international
-                  standards for commercial and residential construction
+                <p className="text-gray-600">
+                  Professional cranes, hoists, lifting gear, and rigging
+                  hardware for safe and efficient heavy lifting operations
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Structural Steel Beams & Reinforcement Bars</li>
-                  <li>• Ready-Mix Concrete & Portland Cement</li>
-                  <li>• Engineered Timber & Laminated Wood</li>
-                  <li>• Thermal & Acoustic Insulation Materials</li>
-                </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Construction%20power%20tools%20and%20equipment%20in%20professional%20workshop%2C%20drills%20saws%20and%20construction%20tools%20organized%20display%2C%20professional%20construction%20tools%20and%20equipment%2C%20clean%20organized%20tool%20storage%20facility&width=600&height=400&seq=power-tools&orientation=landscape"
-                alt="Professional Power Tools"
+                src="https://readdy.ai/api/search-image?query=Construction%20machinery%20including%20excavators%20loaders%20and%20construction%20equipment%20on%20building%20site%2C%20professional%20construction%20fleet%20with%20yellow%20machinery%2C%20organized%20construction%20equipment%20yard%20with%20building%20materials%2C%20active%20construction%20site%20background&width=600&height=400&seq=construction-machinery&orientation=landscape"
+                alt="Construction Machinery"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Professional Power Tools
+                  Construction Machinery
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Industrial-grade power tools and equipment from renowned
-                  brands like DeWalt, Makita, and Bosch
+                <p className="text-gray-600">
+                  Complete range of construction equipment including loaders,
+                  graders, compactors, and earthmoving machinery
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Cordless Drills & Impact Drivers</li>
-                  <li>• Circular Saws & Miter Saws</li>
-                  <li>• Angle Grinders & Belt Sanders</li>
-                  <li>• Air Compressors & Pneumatic Tools</li>
-                </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Construction%20safety%20equipment%20and%20protective%20gear%2C%20hard%20hats%20safety%20vests%20and%20construction%20safety%20supplies%2C%20professional%20construction%20safety%20equipment%20display%2C%20organized%20safety%20equipment%20storage%20facility&width=600&height=400&seq=safety-equipment&orientation=landscape"
-                alt="Safety Equipment"
+                src="https://readdy.ai/api/search-image?query=Drilling%20equipment%20and%20boring%20machines%20for%20mining%20and%20construction%2C%20professional%20drilling%20rigs%20and%20earth%20drilling%20machinery%2C%20organized%20drilling%20equipment%20fleet%2C%20industrial%20drilling%20operations%20with%20clear%20background&width=600&height=400&seq=drilling-equipment&orientation=landscape"
+                alt="Drilling Equipment"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Safety Equipment & PPE
+                  Drilling Equipment
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  OSHA-compliant safety equipment and personal protective
-                  equipment for construction site safety
+                <p className="text-gray-600">
+                  Advanced drilling rigs, boring machines, and specialized
+                  drilling equipment for mining and foundation work
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• ANSI-Certified Hard Hats & Safety Helmets</li>
-                  <li>• High-Visibility Safety Vests & Harnesses</li>
-                  <li>• Steel-Toe Safety Boots & Cut-Resistant Gloves</li>
-                  <li>• Fall Protection & Confined Space Equipment</li>
-                </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Construction%20scaffolding%20and%20temporary%20structures%20on%20building%20site%2C%20metal%20scaffolding%20systems%20and%20construction%20support%20structures%2C%20professional%20scaffolding%20installation%2C%20organized%20construction%20support%20equipment&width=600&height=400&seq=scaffolding&orientation=landscape"
-                alt="Scaffolding Systems"
+                src="https://readdy.ai/api/search-image?query=Material%20handling%20equipment%20including%20forklifts%20conveyor%20systems%20and%20loading%20machinery%2C%20professional%20warehouse%20and%20construction%20material%20handling%20equipment%2C%20organized%20material%20handling%20fleet%20with%20yellow%20and%20orange%20machinery&width=600&height=400&seq=material-handling&orientation=landscape"
+                alt="Material Handling"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Scaffolding & Formwork Systems
+                  Material Handling
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Engineered scaffolding systems and concrete formwork solutions
-                  for safe and efficient construction
+                <p className="text-gray-600">
+                  Forklifts, conveyor systems, loading equipment, and material
+                  handling solutions for efficient operations
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Tube & Clamp Scaffolding Systems</li>
-                  <li>• Modular System Scaffolding</li>
-                  <li>• Aluminum Concrete Formwork</li>
-                  <li>• Hydraulic Shoring Systems</li>
-                </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img
-                src="https://readdy.ai/api/search-image?query=Construction%20electrical%20and%20plumbing%20equipment%2C%20electrical%20conduits%20and%20plumbing%20pipes%20and%20fittings%2C%20construction%20utility%20equipment%20display%2C%20professional%20construction%20electrical%20supplies%20storage&width=600&height=400&seq=electrical-plumbing&orientation=landscape"
-                alt="MEP Systems"
+                src="https://readdy.ai/api/search-image?query=Specialized%20construction%20and%20mining%20tools%20including%20jackhammers%20power%20tools%20and%20heavy%20equipment%20attachments%2C%20professional%20construction%20tool%20collection%2C%20organized%20industrial%20tools%20and%20equipment%20display&width=600&height=400&seq=specialized-tools&orientation=landscape"
+                alt="Specialized Tools"
                 className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  MEP Systems & Components
+                  Specialized Tools & Attachments
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Mechanical, electrical, and plumbing systems for comprehensive
-                  building infrastructure solutions
+                <p className="text-gray-600">
+                  Professional-grade attachments, specialized tools, and
+                  equipment accessories for enhanced productivity
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Electrical Conduits & Cable Management</li>
-                  <li>• Copper & PEX Plumbing Systems</li>
-                  <li>• Commercial Grade Fixtures & Outlets</li>
-                  <li>• HVAC Ducting & Ventilation Components</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -185,48 +150,48 @@ export default function ConstructionMaterials() {
               Why Choose Our Construction Solutions?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Trusted by contractors and builders worldwide for reliable
-              construction equipment and materials
+              Trusted heavy equipment solutions with comprehensive support and
+              proven reliability
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="ri-award-line text-3xl text-orange-600"></i>
+                <i className="ri-shield-check-line text-orange-600 text-2xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Certified Quality Standards
+                Certified Equipment
               </h3>
               <p className="text-gray-600">
-                All equipment meets ISO, CE, and local safety certifications
-                from authorized dealers and manufacturers
+                All machinery meets international safety standards with full
+                certifications and manufacturer warranties
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="ri-truck-line text-3xl text-blue-600"></i>
+                <i className="ri-tools-fill text-blue-600 text-2xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Global Logistics Network
+                Expert Maintenance
               </h3>
               <p className="text-gray-600">
-                Efficient worldwide shipping and delivery solutions to keep your
-                construction projects on schedule
+                Professional maintenance and repair services by certified
+                technicians with genuine parts availability
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="ri-shield-check-line text-3xl text-green-600"></i>
+                <i className="ri-time-line text-green-600 text-2xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Warranty & Support
+                24/7 Support
               </h3>
               <p className="text-gray-600">
-                Comprehensive warranty coverage and technical support for all
-                construction equipment and materials
+                Round-the-clock technical support and emergency service for all
+                equipment and machinery
               </p>
             </div>
           </div>
