@@ -134,9 +134,17 @@ export default function Footer() {
           </p>
           <p>
             These Terms & Conditions ("Terms") govern your use of the MatLinka
-            platform available at [www.matlinka.com] and related services. By
-            using our platform, you agree to be bound by these Terms. If you do
-            not agree, please do not use our services.
+            platform available at{" "}
+            <a
+              href="https://www.matlinka.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 underline hover:text-white"
+            >
+              www.matlinka.com
+            </a>{" "}
+            and related services. By using our platform, you agree to be bound
+            by these Terms. If you do not agree, please do not use our services.
           </p>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
