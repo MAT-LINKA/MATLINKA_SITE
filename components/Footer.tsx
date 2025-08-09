@@ -124,7 +124,21 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
+        <div className="mt-8 text-[10px] text-gray-500 border-t border-gray-800 pt-4 leading-snug">
+          <p>
+            *Terms and Conditions: MatLinka is an online platform that connects
+            clients ("Buyers") with suppliers based on the Buyers' material
+            requirements and budget. We only facilitate introductions between
+            Buyers and Suppliers. We are not a party to any transaction and do
+            not manufacture, sell, or purchase goods.
+          </p>
+          <p>
+            These Terms & Conditions ("Terms") govern your use of the MatLinka
+            platform available at [www.matlinka.com] and related services. By
+            using our platform, you agree to be bound by these Terms. If you do
+            not agree, please do not use our services.
+          </p>
+        </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>&copy; 2025 Material Supply Solutions. All rights reserved.</p>
         </div>
