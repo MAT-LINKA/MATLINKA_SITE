@@ -74,7 +74,7 @@ export default function Home() {
                     <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
                       {slide.subtitle}
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
                         href="/contact"
                         className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap"
@@ -87,7 +87,7 @@ export default function Home() {
                       >
                         Our Services
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -265,6 +265,22 @@ export default function Home() {
                       </h3>
                       <p className="text-gray-600">
                         Personal assistance throughout the procurement process
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <i className="ri-global-fill text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        Global Supplier Network
+                      </h3>
+                      <p className="text-gray-600">
+                        Our Global Supplier Network is dedicated to sourcing a
+                        wide range of industrial products tailored to meet our
+                        customers' specific needs.
                       </p>
                     </div>
                   </div>

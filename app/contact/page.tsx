@@ -13,6 +13,7 @@ export default function Contact() {
     mobile: "",
     materialDescription: "",
     budget: "",
+    cif: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,6 +45,7 @@ export default function Contact() {
           companyName: formData.companyName,
           mobile: formData.mobile,
           budget: formData.budget,
+          cif: formData.cif,
           materialDescription: formData.materialDescription,
           title: "New Inquiry", // only if you're using {{title}} in subject
         },
@@ -71,6 +73,7 @@ export default function Contact() {
           mobile: "",
           materialDescription: "",
           budget: "",
+          cif: "",
         });
         setTimeout(() => {
           setIsSubmitted(false);
@@ -292,6 +295,38 @@ export default function Contact() {
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                         placeholder="e.g., $10,000 - $50,000"
                       />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        CIF *
+                      </label>
+                      <div className="flex items-center gap-6">
+                        <label className="flex items-center">
+                          <input
+                            type="radio"
+                            name="cif"
+                            value="Yes"
+                            checked={formData.cif === "Yes"}
+                            onChange={handleInputChange}
+                            required
+                            className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+                          />
+                          <span className="ml-2 text-sm text-gray-700">
+                            Yes
+                          </span>
+                        </label>
+                        <label className="flex items-center">
+                          <input
+                            type="radio"
+                            name="cif"
+                            value="No"
+                            checked={formData.cif === "No"}
+                            onChange={handleInputChange}
+                            className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+                          />
+                          <span className="ml-2 text-sm text-gray-700">No</span>
+                        </label>
+                      </div>
                     </div>
 
                     <button
