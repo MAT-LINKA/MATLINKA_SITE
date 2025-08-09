@@ -37,9 +37,21 @@ export default function Home() {
           {/* Typing Text */}
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 flex items-center justify-center h-full">
-            <h1 className="text-white font-bold tracking-widest text-6xl md:text-8xl">
-              {displayedText}
+            <h1 className="relative font-bold tracking-widest text-6xl md:text-8xl text-gray-300">
+              <span className="relative z-10">{displayedText}</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-[shine_2s_linear_infinite]" />
             </h1>
+
+            <style jsx>{`
+              @keyframes shine {
+                0% {
+                  transform: translateX(-100%);
+                }
+                100% {
+                  transform: translateX(100%);
+                }
+              }
+            `}</style>
           </div>
 
           {/* {slides.map((slide, index) => (
