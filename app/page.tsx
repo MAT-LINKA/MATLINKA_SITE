@@ -211,7 +211,7 @@ export default function Home() {
                 </p>
 
                 <div className="space-y-6">
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <i className="ri-check-line text-blue-600"></i>
                     </div>
@@ -224,7 +224,7 @@ export default function Home() {
                         reliability
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
