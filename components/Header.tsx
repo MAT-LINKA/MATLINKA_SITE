@@ -13,8 +13,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-2xl font-bold text-blue-600 font-pacifico"
+            className="flex items-center text-2xl font-bold text-blue-600 font-pacifico"
           >
+            <img
+              src="/favicon.ico"
+              alt="Matlinka Logo"
+              className="w-6 h-6 mr-2"
+            />
             MatLinka
           </Link>
 
