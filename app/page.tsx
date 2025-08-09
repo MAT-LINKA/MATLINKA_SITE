@@ -53,7 +53,16 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-screen overflow-hidden">
-          {slides.map((slide, index) => (
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('/Section.jpg')",
+            }}
+          >
+            {/* <div className="absolute inset-0 bg-blue-900/70"></div> */}
+          </div>
+
+          {/* {slides.map((slide, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -73,8 +82,8 @@ export default function Home() {
                     </h1>
                     <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
                       {slide.subtitle}
-                    </p>
-                    {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    </p> */}
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
                         href="/contact"
                         className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap"
@@ -88,14 +97,14 @@ export default function Home() {
                         Our Services
                       </Link>
                     </div> */}
-                  </div>
+          {/* </div>
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
 
           {/* Navigation Arrows */}
-          <button
+          {/* <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm cursor-pointer"
           >
@@ -106,10 +115,10 @@ export default function Home() {
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm cursor-pointer"
           >
             <i className="ri-arrow-right-line w-6 h-6 flex items-center justify-center"></i>
-          </button>
+          </button> */}
 
           {/* Slide Indicators */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
@@ -119,7 +128,7 @@ export default function Home() {
                 }`}
               />
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* Services Overview */}
@@ -141,7 +150,7 @@ export default function Home() {
                   <i className="ri-building-line text-3xl text-blue-600"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Construction Equipment
+                  Construction Materials & Equipment
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Heavy machinery, tools, and construction materials from
@@ -151,7 +160,7 @@ export default function Home() {
                   href="/products/construction"
                   className="text-blue-600 hover:text-blue-800 font-semibold cursor-pointer"
                 >
-                  Learn More →
+                  Click To See More →
                 </Link>
               </div>
 
