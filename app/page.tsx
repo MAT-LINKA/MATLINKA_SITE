@@ -6,46 +6,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      image:
-        "https://readdy.ai/api/search-image?query=Modern%20industrial%20warehouse%20with%20stacks%20of%20construction%20materials%2C%20solar%20panels%2C%20and%20supply%20equipment%20in%20organized%20rows%2C%20professional%20lighting%2C%20clean%20industrial%20environment%20with%20blue%20and%20gray%20tones%2C%20minimalist%20background%20with%20subtle%20textures&width=1920&height=1080&seq=hero-materials-1&orientation=landscape",
-      title: "Quality Materials for Every Project",
-      subtitle:
-        "Your trusted partner for solar, construction, and water supply materials. Professional solutions delivered with excellence.",
-    },
-    {
-      image:
-        "https://readdy.ai/api/search-image?query=Large%20construction%20site%20with%20cranes%20and%20building%20materials%2C%20solar%20panel%20installation%20on%20rooftops%2C%20modern%20industrial%20setting%20with%20organized%20equipment%20and%20supplies%2C%20professional%20blue%20and%20gray%20color%20scheme&width=1920&height=1080&seq=hero-materials-2&orientation=landscape",
-      title: "Professional Construction Solutions",
-      subtitle:
-        "From foundation to finish, we provide premium materials for all your construction and infrastructure needs.",
-    },
-    {
-      image:
-        "https://readdy.ai/api/search-image?query=Solar%20panel%20farm%20with%20rows%20of%20photovoltaic%20panels%20under%20blue%20sky%2C%20clean%20renewable%20energy%20installation%2C%20modern%20industrial%20landscape%20with%20organized%20solar%20equipment%20and%20mounting%20systems&width=1920&height=1080&seq=hero-materials-3&orientation=landscape",
-      title: "Renewable Energy Materials",
-      subtitle:
-        "Leading the future with comprehensive solar solutions and sustainable energy materials for modern applications.",
-    },
-  ];
+  const text = "MatLinka";
+  const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [slides.length]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+    if (displayedText.length < text.length) {
+      const t = setTimeout(() => {
+        setDisplayedText((prev) => prev + text[prev.length]);
+      }, 150);
+      return () => clearTimeout(t);
+    }
+  }, [displayedText, text]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -58,8 +29,17 @@ export default function Home() {
             style={{
               backgroundImage: "url('/Section.jpg')",
             }}
-          >
-            {/* <div className="absolute inset-0 bg-blue-900/70"></div> */}
+          ></div>
+
+          {/* Overlay for better contrast */}
+          {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
+
+          {/* Typing Text */}
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="relative z-10 flex items-center justify-center h-full">
+            <h1 className="text-white font-bold tracking-widest text-6xl md:text-8xl">
+              {displayedText}
+            </h1>
           </div>
 
           {/* {slides.map((slide, index) => (
