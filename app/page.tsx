@@ -130,8 +130,8 @@ export default function Home() {
                 What We Offer
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We specialize in connecting you with verified suppliers for all
-                your industrial and construction material needs
+                We specialize in connecting you with suppliers for all your
+                industrial and construction material needs
               </p>
             </div>
 
@@ -205,9 +205,9 @@ export default function Home() {
                   Why Choose Our Services?
                 </h2>
                 <p className="text-xl text-gray-600 mb-8">
-                  We understand the challenges of sourcing quality materials and
-                  equipment. Our network of verified suppliers ensures you get
-                  the best products at competitive prices.
+                  We understand the challenges of sourcing materials and
+                  equipment. Our network of suppliers ensures you get the best
+                  products at competitive prices.
                 </p>
 
                 <div className="space-y-6">
@@ -241,7 +241,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <i className="ri-shield-check-line text-blue-600"></i>
                     </div>
@@ -253,7 +253,7 @@ export default function Home() {
                         Rigorous quality checks and certification processes
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -306,7 +306,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Submit your material requirements and let us connect you with the
-              right suppliers. Get competitive quotes and quality assurance.
+              right suppliers. Get competitive quotes.
             </p>
             <Link
               href="/contact"

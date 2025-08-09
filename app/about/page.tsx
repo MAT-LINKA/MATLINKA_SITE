@@ -34,9 +34,9 @@ export default function About() {
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 We understand the challenges businesses face when sourcing
-                quality materials and equipment. That's why we've built a
-                comprehensive network of verified suppliers who can meet diverse
-                requirements across multiple industries.
+                materials and equipment. That's why we've built a comprehensive
+                network of suppliers who can meet diverse requirements across
+                multiple industries.
               </p>
               <p className="text-lg text-gray-600">
                 Our expertise spans construction equipment, electrical systems,
@@ -70,7 +70,7 @@ export default function About() {
               </h3>
               <p className="text-gray-600 text-lg">
                 To simplify the procurement process for industrial materials by
-                connecting clients with verified suppliers, ensuring quality,
+                connecting clients with suppliers, ensuring quality,
                 reliability, and competitive pricing for every project.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <i className="ri-shield-check-line text-4xl text-blue-600"></i>
               </div>
@@ -116,7 +116,7 @@ export default function About() {
                 We maintain rigorous quality standards and work only with
                 suppliers who meet our certification requirements.
               </p>
-            </div>
+            </div> */}
 
             <div className="text-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">

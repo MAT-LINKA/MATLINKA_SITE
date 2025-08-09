@@ -270,7 +270,7 @@ export default function ConstructionMaterials() {
             Ready to Build Your Vision?
           </h2>
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-            Connect with verified suppliers for premium construction equipment,
+            Connect with suppliers for premium construction equipment,
             materials, and tools at competitive prices
           </p>
           <Link

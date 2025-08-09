@@ -25,14 +25,14 @@ export default function Header() {
             >
               Home
             </Link>
-            <div className="relative group">
-              {/* Main Menu */}
-              <button className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
+            {/* <div className="relative group"> */}
+            {/* Main Menu */}
+            {/* <button className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 Products
-              </button>
+              </button> */}
 
-              {/* Dropdown Menu */}
-              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            {/* Dropdown Menu */}
+            {/* <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <ul className="divide-y divide-gray-100">
                   <li>
                     <Link
@@ -91,7 +91,7 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <Link
               href="/about"

@@ -295,8 +295,8 @@ export default function SolarMaterials() {
             Ready to Power Your Future?
           </h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Connect with verified suppliers for premium solar, wind, and
-            renewable energy solutions at competitive prices
+            Connect with suppliers for premium solar, wind, and renewable energy
+            solutions at competitive prices
           </p>
           <Link
             href="/contact"

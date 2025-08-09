@@ -28,8 +28,7 @@ export default function Services() {
               What We Offer
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From supplier verification to project management, we provide
-              end-to-end solutions for your procurement needs
+              We provide end-to-end solutions for your procurement needs
             </p>
           </div>
           <div className="max-w-7xl mx-auto px-4">
@@ -42,25 +41,15 @@ export default function Services() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Supplier Sourcing
                 </h3>
-                <p className="text-gray-600 mb-6">
-                  We identify and connect you with verified suppliers who can
-                  meet your specific requirements for construction equipment,
-                  electrical panels, turbines, generators, and pumps.
+                <p className="text-gray-600mb-6">
+                  We identify and connect you with potential suppliers from our
+                  global network who can meet your specific requirements for
+                  industrial needs. Our team will source suppliers that match
+                  your specifications, providing you with a list of potential
+                  options to consider. This service gives you access to a vast
+                  network of suppliers, streamlining your search and saving you
+                  time.
                 </p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <i className="ri-check-line text-green-600 mr-2"></i>
-                    Global supplier network
-                  </li>
-                  <li className="flex items-center">
-                    <i className="ri-check-line text-green-600 mr-2"></i>
-                    Verification and certification
-                  </li>
-                  <li className="flex items-center">
-                    <i className="ri-check-line text-green-600 mr-2"></i>
-                    Quality assurance
-                  </li>
-                </ul>
               </div>
 
               {/* card2 */}
@@ -93,7 +82,7 @@ export default function Services() {
               </div>
 
               {/* card3 */}
-              <div className="bg-gray-50 rounded-xl p-8 w-full ">
+              {/* <div className="bg-gray-50 rounded-xl p-8 w-full ">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                   <i className="ri-shield-check-line text-3xl text-purple-600"></i>
                 </div>
@@ -119,7 +108,7 @@ export default function Services() {
                     Detailed product information
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

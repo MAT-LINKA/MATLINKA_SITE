@@ -114,8 +114,8 @@ export default function Contact() {
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
                   Fill out the form with your material requirements and we'll
-                  connect you with verified suppliers who can meet your
-                  specifications and budget.
+                  connect you with suppliers who can meet your specifications
+                  and budget.
                 </p>
 
                 <div className="space-y-6">
