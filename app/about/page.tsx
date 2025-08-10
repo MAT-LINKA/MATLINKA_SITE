@@ -42,7 +42,7 @@ export default function About() {
                 Our expertise spans construction equipment, electrical systems,
                 water management solutions, and specialized industrial
                 machinery, ensuring our clients have access to everything they
-                need from a single trusted source.
+                need from a single source.
               </p>
             </div>
 
@@ -70,8 +70,8 @@ export default function About() {
               </h3>
               <p className="text-gray-600 text-lg">
                 To simplify the procurement process for industrial materials by
-                connecting clients with suppliers, ensuring quality,
-                reliability, and competitive pricing for every project.
+                connecting clients with suppliers, ensuring reliability, and
+                competitive pricing for every project.
               </p>
             </div>
 
@@ -105,18 +105,18 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* <div className="text-center">
+            <div className="text-center">
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="ri-shield-check-line text-4xl text-blue-600"></i>
+                <i className="ri-thumb-up-line text-4xl text-blue-600"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Quality Assurance
+                Covenience
               </h3>
               <p className="text-gray-600">
-                We maintain rigorous quality standards and work only with
-                suppliers who meet our certification requirements.
+                Your reliable solution for all your requirements, right at your
+                fingertips. We bridge the gap between your needs and suppliers.
               </p>
-            </div> */}
+            </div>
 
             <div className="text-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -127,7 +127,7 @@ export default function About() {
               </h3>
               <p className="text-gray-600">
                 Our clients can count on us for consistent service, timely
-                delivery, and dependable supplier relationships.
+                responses, and strong supplier relationships.
               </p>
             </div>
 

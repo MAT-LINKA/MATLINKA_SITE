@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MatLinka",
   description:
-    "Your trusted partner in connecting clients with suppliers for construction equipment, electrical panels, turbines, generators, pumps and more.",
+    "Your reliable link to suppliers, simplifying the way you source and connect.",
   icons: {
     icon: "/favicon.ico",
   },

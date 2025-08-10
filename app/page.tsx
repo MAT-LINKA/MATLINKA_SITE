@@ -3,11 +3,126 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+function HeroCarousel({
+  slides,
+  interval = 4000, // autoplay ms
+}: {
+  slides: string[];
+  interval?: number;
+}) {
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  // autoplay
+  useEffect(() => {
+    if (paused || slides.length <= 1) return;
+    const id = setInterval(
+      () => setCurrent((c) => (c + 1) % slides.length),
+      interval
+    );
+    return () => clearInterval(id);
+  }, [paused, slides.length, interval]);
+
+  const goTo = (i: number) => setCurrent((i + slides.length) % slides.length);
+  const prev = () => goTo(current - 1);
+  const next = () => goTo(current + 1);
+
+  return (
+    <div
+      className="absolute inset-0 overflow-hidden group"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      aria-roledescription="carousel"
+    >
+      {/* Track */}
+      <div
+        className="h-full w-full flex transition-transform duration-700 ease-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {slides.map((src, i) => (
+          <img
+            key={`${src}-${i}`}
+            src={src}
+            alt=""
+            className="w-full h-full object-cover flex-shrink-0"
+            aria-hidden={i !== current}
+          />
+        ))}
+      </div>
+
+      {/* Arrows */}
+      <button
+        onClick={prev}
+        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
+        aria-label="Previous slide"
+      >
+        ‹
+      </button>
+      <button
+        onClick={next}
+        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
+        aria-label="Next slide"
+      >
+        ›
+      </button>
+
+      {/* Dots */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            className={`h-2 w-2 rounded-full ${
+              i === current ? "bg-white" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const text = "MatLinka";
   const [displayedText, setDisplayedText] = useState("");
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [visibleCount, setVisibleCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+
+  const services = [
+    "Heavy Construction Equipment",
+    "Mining & Drilling Equipments",
+    "Professional Power Tools",
+    "Safety Equipments",
+    "Scaffolding & Formwork System",
+    "MEP System",
+    "Solar Panels & Distribution Panels",
+    "Reactor & Transformer",
+    "Turbines & Generators",
+    "Industrial Fluid Pumps",
+    "Industrial Valves",
+    "Pharmaceutical equipments",
+    // add more...
+  ];
+
+  const slides = [
+    "/Img1.jpeg",
+    "/img2.jpg",
+    "/img3.jpg",
+    "/img4.jpg",
+    "/img5.jpg",
+    "/img6.jpg",
+    "/img7.jpg",
+    "/img8.jpg",
+    "/img9.jpg",
+    "/img10.jpg",
+    "/img11.jpg",
+    "/img12.jpg",
+    "/img13.jpg",
+  ];
 
   useEffect(() => {
     if (displayedText.length < text.length) {
@@ -17,6 +132,58 @@ export default function Home() {
       return () => clearTimeout(t);
     }
   }, [displayedText, text]);
+
+  // Start the sequence once the section is in view
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasStarted) {
+          setHasStarted(true);
+          observer.unobserve(el); // run once
+        }
+      },
+      { root: null, threshold: 0.35 } // ~35% of section visible
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [hasStarted]);
+
+  // Reveal items one by one after start
+  useEffect(() => {
+    if (!hasStarted) return;
+    if (visibleCount >= services.length) return;
+
+    const t = setTimeout(
+      () => setVisibleCount((c) => c + 1),
+      400 // speed per item
+    );
+    return () => clearTimeout(t);
+  }, [hasStarted, visibleCount, services.length]);
+
+  // 4) Background carousel: cross-fade
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    if (!hasStarted) return; // only run once section is visible
+    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (mql.matches) return; // respect reduced motion
+
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % slides.length);
+    }, 10000); // slide duration
+    return () => clearInterval(id);
+  }, [hasStarted, slides.length]);
+
+  // (Optional) Preload images to avoid first-fade flash
+  useEffect(() => {
+    slides.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [slides]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -123,76 +290,58 @@ export default function Home() {
           </div> */}
         </section>
 
-        {/* Services Overview */}
-        <section className="py-20 bg-gray-50">
+        {/* Services what we offer */}
+        <section
+          className="py-20 bg-gray-50 bg-cover bg-center"
+          style={{ backgroundImage: "url('/We_Offer.jpg')" }}
+        >
+          {" "}
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 What We Offer
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl font-bold text-gray-900 max-w-3xl mx-auto">
                 We specialize in connecting you with suppliers for all your
                 industrial and construction material needs
               </p>
             </div>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <i className="ri-building-line text-3xl text-blue-600"></i>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Construction Materials & Equipment
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Heavy machinery, tools, and construction materials from
-                  trusted suppliers worldwide
-                </p>
-                <Link
-                  href="/products/construction"
-                  className="text-blue-600 hover:text-blue-800 font-semibold cursor-pointer"
-                >
-                  Click To See More →
-                </Link>
-              </div>
+        {/* Listing Content */}
+        <section
+          ref={sectionRef}
+          className="relative h-[520px] overflow-hidden"
+        >
+          {/* Carousel background */}
+          <HeroCarousel slides={slides} interval={3500} />
 
-              <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <i className="ri-flashlight-line text-3xl text-green-600"></i>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Electrical Solutions
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Electrical panels, generators, transformers, and power
-                  distribution equipment
-                </p>
-                <Link
-                  href="/products/power"
-                  className="text-blue-600 hover:text-blue-800 font-semibold cursor-pointer"
-                >
-                  Learn More →
-                </Link>
-              </div>
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/50 pointer-events-none" />
 
-              <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <i className="ri-drop-line text-3xl text-purple-600"></i>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Water & Pumping Systems
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Pumps, turbines, water treatment equipment, and fluid handling
-                  systems
-                </p>
-                <Link
-                  href="/products/water-supply"
-                  className="text-blue-600 hover:text-blue-800 font-semibold cursor-pointer"
-                >
-                  Learn More →
-                </Link>
-              </div>
+          {/* List content (your grid) */}
+          <div className="relative z-10 h-full flex items-center">
+            <div className="container mx-auto px-6">
+              <ul className="grid grid-rows-4 grid-flow-col md:grid-rows-4 gap-6">
+                {services.map((item, i) => {
+                  const shown = i < visibleCount;
+                  return (
+                    <li
+                      key={item}
+                      className={[
+                        "flex items-start gap-3 text-white/95 text-lg md:text-xl transition-all duration-500",
+                        shown
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-2",
+                      ].join(" ")}
+                    >
+                      <span className="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-400 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
         </section>
@@ -207,8 +356,9 @@ export default function Home() {
                 </h2>
                 <p className="text-xl text-gray-600 mb-8">
                   We understand the challenges of sourcing materials and
-                  equipment. Our network of suppliers ensures you get the best
-                  products at competitive prices.
+                  equipment according to your needs. Our global network of
+                  suppliers will source your required products within your
+                  budget.
                 </p>
 
                 <div className="space-y-6">
@@ -265,7 +415,9 @@ export default function Home() {
                         Dedicated Support
                       </h3>
                       <p className="text-gray-600">
-                        Personal assistance throughout the procurement process
+                        Personalized assistance will be provided according to
+                        the client's requirements after confirming the
+                        supplier's offer.
                       </p>
                     </div>
                   </div>

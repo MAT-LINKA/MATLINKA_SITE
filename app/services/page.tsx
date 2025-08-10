@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { IconBulldozer } from "@tabler/icons-react";
 
 export default function Services() {
   return (
@@ -31,17 +32,69 @@ export default function Services() {
               We provide end-to-end solutions for your procurement needs
             </p>
           </div>
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* card1 */}
-              <div className="bg-gray-50 rounded-xl p-8 w-full ">
+
+          <section className="py-20 bg-gray-50">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="bg-white rounded-xl p-8 shadow-lg">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <i className="ri-search-line text-3xl text-blue-600"></i>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Supplier Sourcing
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    We identify and connect you with potential suppliers from
+                    our global network who can meet your specific requirements
+                    for industrial needs. Our team will source suppliers that
+                    match your specifications, providing you with a list of
+                    potential options to consider. This service gives you access
+                    to a vast network of suppliers, streamlining your search and
+                    saving you time.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-xl p-8 shadow-lg">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <i className="ri-file-list-line text-3xl text-green-600"></i>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Quote Management
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    Get competitive quotes from multiple suppliers and compare
+                    pricing, delivery terms, and specifications to make informed
+                    decisions.
+                  </p>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-center">
+                      <i className="ri-check-line text-green-600 mr-2"></i>
+                      Multiple quote comparison
+                    </li>
+                    <li className="flex items-center">
+                      <i className="ri-check-line text-green-600 mr-2"></i>
+                      Detailed specifications
+                    </li>
+                    <li className="flex items-center">
+                      <i className="ri-check-line text-green-600 mr-2"></i>
+                      Transparent pricing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* <div className="max-w-7xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
+          {/* card1 */}
+          {/* <div className="bg-gray-50 rounded-xl p-8 w-full ">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                   <i className="ri-search-line text-3xl text-blue-600"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Supplier Sourcing
                 </h3>
-                <p className="text-gray-600mb-6">
+                <p className="text-gray-600 mb-6">
                   We identify and connect you with potential suppliers from our
                   global network who can meet your specific requirements for
                   industrial needs. Our team will source suppliers that match
@@ -50,10 +103,10 @@ export default function Services() {
                   network of suppliers, streamlining your search and saving you
                   time.
                 </p>
-              </div>
+              </div> */}
 
-              {/* card2 */}
-              <div className="bg-gray-50 rounded-xl p-8 w-full ">
+          {/* card2 */}
+          {/* <div className="bg-gray-50 rounded-xl p-8 w-full ">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                   <i className="ri-file-list-line text-3xl text-green-600"></i>
                 </div>
@@ -79,10 +132,10 @@ export default function Services() {
                     Transparent pricing
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
-              {/* card3 */}
-              {/* <div className="bg-gray-50 rounded-xl p-8 w-full ">
+          {/* card3 */}
+          {/* <div className="bg-gray-50 rounded-xl p-8 w-full ">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                   <i className="ri-shield-check-line text-3xl text-purple-600"></i>
                 </div>
@@ -109,8 +162,8 @@ export default function Services() {
                   </li>
                 </ul>
               </div> */}
-            </div>
-          </div>
+          {/* </div>
+          </div> */}
         </div>
       </section>
 
@@ -191,7 +244,14 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <IconBulldozer size={32} className="text-blue-600" />{" "}
+              </div>
+              <h3 className="font-semibold text-gray-900">Mining</h3>
+            </div>
+
             <div className="text-center">
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="ri-building-line text-3xl text-blue-600"></i>
@@ -218,6 +278,13 @@ export default function Services() {
                 <i className="ri-drop-line text-3xl text-orange-600"></i>
               </div>
               <h3 className="font-semibold text-gray-900">Water Treatment</h3>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="ri-capsule-fill text-3xl text-blue-600"></i>
+              </div>
+              <h3 className="font-semibold text-gray-900">Pharmaceuticals</h3>
             </div>
           </div>
         </div>
