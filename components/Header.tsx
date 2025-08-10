@@ -138,7 +138,7 @@ export default function Header() {
               </Link>
 
               {/* Products with Styled Dropdown */}
-              <details className="group">
+              {/* <details className="group">
                 <summary className="flex items-center justify-between text-gray-700 hover:text-blue-600 py-2 cursor-pointer list-none">
                   Products
                   <span className="transform group-open:rotate-90 transition-transform">
@@ -182,7 +182,7 @@ export default function Header() {
                     and Building Materials
                   </Link>
                 </div>
-              </details>
+              </details> */}
 
               {/* About Us */}
               <Link
