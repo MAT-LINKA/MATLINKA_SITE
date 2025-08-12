@@ -323,7 +323,7 @@ export default function Home() {
           {/* List content (your grid) */}
           <div className="relative z-10 h-full flex items-center">
             <div className="container mx-auto px-6">
-              <ul className="grid grid-rows-4 grid-flow-col md:grid-rows-4 gap-6">
+              {/* <ul className="grid grid-rows-4 grid-flow-col md:grid-rows-4 gap-6">
                 {services.map((item, i) => {
                   const shown = i < visibleCount;
                   return (
@@ -331,6 +331,33 @@ export default function Home() {
                       key={item}
                       className={[
                         "flex items-start gap-3 text-white/95 text-lg md:text-xl transition-all duration-500",
+                        shown
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-2",
+                      ].join(" ")}
+                    >
+                      <span className="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-400 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  );
+                })}
+              </ul> */}
+              <ul
+                className="
+    grid gap-4
+    grid-cols-1
+    sm:grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-4
+  "
+              >
+                {services.map((item, i) => {
+                  const shown = i < visibleCount;
+                  return (
+                    <li
+                      key={item}
+                      className={[
+                        "flex items-start gap-3 text-white/95 text-base md:text-lg transition-all duration-500",
                         shown
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 translate-y-2",
